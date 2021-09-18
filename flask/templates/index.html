@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+index.html
+{% endblock %}
+
+
+
+{% block content %}
+
+<!--escape jinja-->
+{% raw %}
+<div id="app">
+    <div class="container">
+        <img :src="img_data">
+    </div>
+</div>
+
+{% endraw %}
+<!--escape jinja END-->
+<!--write above javascript-->
+<script src="/static/js/index.js"></script>
+
+
+{% endblock %}
