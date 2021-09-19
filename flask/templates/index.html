@@ -13,6 +13,11 @@ index.html
 <div id="app">
     <div class="container">
         <img :src="img_data">
+        <p>reloaded {{ last_reloaded_date }}</p>
+        <input type='tel' v-model="frame_ratio" v-on:keydown.enter="start_reloading">
+        <button @click="start_reloading">start</button>
+        <button @click="stop_reloading">stop</button>
+        <p>fps: {{current_fps}}</p>
     </div>
 </div>
 
