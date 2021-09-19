@@ -11,7 +11,7 @@ git clone https://github.com/hmdyt/live_histogram
 pip install -r requirements.txt
 ```
 
-- rewrite [flask/make_example_data.py](https://github.com/hmdyt/live_histogram/blob/main/flask/make_example_data.py)
+- rewrite [flask/make_data.py](https://github.com/hmdyt/live_histogram/blob/main/flask/make_data.py)
 
 - execute
 ```bash
