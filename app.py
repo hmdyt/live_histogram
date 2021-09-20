@@ -1,5 +1,5 @@
 # flask
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify
 # matplotlib class
 import construct_graphs
 # for making histogram data
@@ -10,7 +10,7 @@ app = Flask(__name__)
 # html routing
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return "hello"
 
 # An API: returns histogram image as base64 in json
 @app.route('/get_hist_data')
@@ -24,5 +24,4 @@ def get_hist_data():
 
 
 if __name__ == '__main__':
-    app.debug = True
     app.run()
