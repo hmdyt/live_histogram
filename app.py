@@ -10,7 +10,7 @@ app = Flask(__name__)
 # html routing
 @app.route('/')
 def index():
-    return "hello"
+    return "hello world"
 
 # An API: returns histogram image as base64 in json
 @app.route('/get_hist_data')
